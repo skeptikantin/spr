@@ -134,6 +134,7 @@ Template("training.csv", row =>
             .center()
             .print()
         ,
+/*
         newSelector("lr")
             .add(getImage("left"), getImage("right"))
             .keys(37, 39)
@@ -141,7 +142,13 @@ Template("training.csv", row =>
             .once()
             .wait()
         ,
-        getKey("lr")
+*/
+        newKey("key", "leftright")
+            .wait()
+            .log()
+        ,
+
+        getKey("key")
             .test.pressed(row.Corr)
             .success(newText("success", "Correct!").css("font-color", "green").center().print())
             .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
