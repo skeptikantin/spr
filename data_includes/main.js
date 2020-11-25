@@ -22,21 +22,47 @@ Header(
         .start()
         .wait()
 )
-.log( "Name" , getVar("ParticipantName") )
+// .log( "Name" , getVar("ParticipantName") )
+// This log command adds a column reporting the participant's name to every line saved to the results
+.log("ParticipantID", PennController.GetURLParameter("participant") );
 // This log command adds a column reporting the participant's name to every line saved to the results
 
 
 newTrial( "intro" ,
 
-    newText("Welcome to suz’ demo experiment.")
-        .css("font-size", "2em")
-        .css("font-family", "Open Sans")
+    newText("Welcome to this experiment!")
+        .css("font-size", "1.5em")
+        .css("font-family", "Verdana")
         .center()
         .print()
     ,
+    newText("<strong>Informed Consent</strong>:")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+        "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
+        "<strong>Risks:</strong> There are no risks involved.<br/>"+
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("By clicking OK, you agree to the above. Let's get started!")
+        .css("font-size", "1.5em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newButton("OK")
+        .size(100)
+        .center()
+        .print()
+        .wait()
+/*    ,
+
     newText("<p>Please enter your name below and press enter:</p>")
         .css("font-size", "1.5em")
-        .css("font-family", "Open Sans")
+        .css("font-family", "Verdana")
         .center()
         .print()
     ,
@@ -45,7 +71,8 @@ newTrial( "intro" ,
         .print()
         .wait()                 // The next command won't be executed until Enter is pressed
         .setVar( "ParticipantName" )
-        // This setVar command stores the value from the TextInput element into the Var element
+        // This setVar command stores the value from the TextInput element into the Var element */
+
 ) // intro message
 
 newTrial("instructions" ,
