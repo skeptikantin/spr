@@ -8,7 +8,13 @@ PennController.DebugOff();
 
 // Show the 'intro' trial first, then all the 'experiment' trials in a random order
 // then send the results and finally show the trial labeled 'bye'
-Sequence( "intro", "instructions", "fullscreen", randomize("spr") , SendResults() , "goodbye" )
+Sequence( "intro",
+    "instructions",
+    "training",
+    "intermission",
+    sepWithN("break", randomize("experiment"), 4),
+    SendResults(),
+    "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -43,7 +49,7 @@ newTrial( "intro" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("By clicking OK, you agree to the above. Let's get started!")
+    newText("<p>By clicking OK, you agree to the above. Let's get started!</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -52,43 +58,109 @@ newTrial( "intro" ,
         .center()
         .print()
         .wait()
-    
+
 ) // intro message
 
 newTrial("instructions" ,
 
-    newText("<p>Your task in this experiment is to read sentences word by word.<br/>" +
-        "You proceed to the next word by pressing the SPACE bar.</p>" +
-        "<p>After reading a sentence, there will be a question about the sentence.</p>" +
-        "<p>You answer the question by using the left and right arrow keys,</br>or by clicking on the arrows.")
-        .css("font-size", "1.5em")
-        .css("font-family", "Open Sans")
-        .center()
+    newText("<p><strong>The self-paced reading experiment</strong></p>")
+        .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Click OK when you are ready to begin.</p>")
+    newText("<p>Your task is to read sentences word by word. Each word appears on the screen,<br/>" +
+        "until you press the space bar, which is when the next word appears.</p>" +
+        "<p>After you have read the sentence, there will be a question about the sentence.</p>" +
+        "<p>You answer the question by using the left or right arrow key,</br>or by clicking on the correct arrow.")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>So the aim is to read as quickly as possible, but you will need to be accurate on the question, too.</p>"+
+        "So make sure you understand what you are reading.</p>"+
+        "<p>We will start with a few practice sentences so you can get used to the task.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>Click OK when you are ready to begin the training phase.</p>")
         .css("font-size", "1.5em")
-        .css("font-family", "Open Sans")
+        .css("font-family", "Verdana")
         .center()
         .print()
     ,
     newButton("OK")
-        .size(200)
+        .size(100)
         .center()
         .print()
         .wait()
 ) // instructions
 
-//newTrial("fullscreen",
-//  newButton("Start the experiment and go fullscreen!")
-//    .print()
-//    .wait()
-//  ,
-//  fullscreen()
-//)
+// set up the training phase
+Template("training.csv", row =>
+    newTrial("training",
+
+        newController("DashedSentence", {s: row.Sentence})
+            .css("font-size", "2em")
+            .css("font-family", "Open Sans")
+            .print()
+            .log()
+            .wait()
+            .remove()
+        ,
+        newTimer(500)
+            .start()
+            .wait()
+        ,
+        newImage("left", "left.png")
+            .size(50,30)
+        // .print()
+        ,
+        newImage("right", "right.png")
+            .size(50,30)
+        // .print()
+        ,
+        newText("<p></p>")
+            .print()
+        ,
+        newText("Comprehension", row.Question)
+            .css("font-size", "2em")
+            .css("font-family", "Open Sans")
+            .center()
+            .print()
+            .log()
+        //.wait()
+        ,
+        newCanvas(600,200)
+            .add(200, 50, getImage("left"))
+            .add(350, 50, getImage("right"))
+            .center()
+            .print()
+        ,
+        newSelector()
+            .add(getImage("left"), getImage("right"))
+            .keys(37, 39)
+            .log()
+            .once()
+            .wait()
+        ,
+        getKey("key")
+            .test.pressed(row.CorrectResponse)
+            .success( newText("success", "Correct!").print() )
+            .failure( newText("failure", "Incorrect").print() )
+        ,
+        newTimer(500)
+            .start()
+            .wait()
+
+)
+        .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
+        .log("Id", row.Id) // logs the stimulus ID
+        .log("Group", row.Group) // which group were participants assigned
+        .log("Corr", row.Corr) // was the correct comprehension button pressed?
+        .log("Comp", row.Question) // which question was asked?
+)
+
 
 Template("sentences.csv", row =>
-    newTrial("spr",
+    newTrial("experiment",
         
         newController("DashedSentence", {s: row.Sentence})
             .css("font-size", "2em")
@@ -127,7 +199,6 @@ Template("sentences.csv", row =>
             .center()
             .print()
         ,
-    //    newKey("FJ")
         newSelector()
             .add(getImage("left"), getImage("right"))
             .keys(37, 39)
@@ -135,7 +206,6 @@ Template("sentences.csv", row =>
             .once()
             .wait()
     )
-    //.fullscreen()
     .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
     .log("Id", row.Id) // logs the stimulus ID
     .log("Group", row.Group) // which group were participants assigned
@@ -146,15 +216,14 @@ Template("sentences.csv", row =>
 SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
-    newText("<p>Thank you for your participation!</p>")
-        .css("font-size", "2em")
-        .css("font-family", "Open Sans")
+    newText("<p>That's it, thank you for your time and effort!</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
         .center()
         .print()
     ,
     newText("<a href='https://www.sfla.ch/'>Click here to validate your participation.</a>")
-        .css("font-size", "1.5em")
-        .css("font-family", "Open Sans")
+        .css("font-family", "Verdana")
         .center()
         .print()
     ,
@@ -165,3 +234,14 @@ newTrial("goodbye",
 
 .setOption( "countsForProgressBar" , false )
 // Make sure the progress bar is full upon reaching this last (non-)trial
+
+function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); }
+
+_AddStandardCommands(function(PennEngine){
+    this.test = {
+        passed: function(){
+            return !PennEngine.controllers.running.utils.valuesForNextElement ||
+                !PennEngine.controllers.running.utils.valuesForNextElement.failed
+        }
+    }
+});

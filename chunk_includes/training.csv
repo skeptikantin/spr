@@ -1,0 +1,5 @@
+﻿Id,Group,Type,Sentence,Question,Corr
+1,A,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,left
+5,E,training,Thank you very much for being here.,Is the experimenter thankful?,right
+7,G,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,right
+8,H,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,left

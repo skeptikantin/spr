@@ -1,113 +1,113 @@
 ﻿Id,Group,Type,Sentence,Question,VoiceQ,DEFINITENESS,ARGUMENT_ASKED,Left,Right,Corr,VERB,TYPICALITY,VOICE,FREQ
-1,A,1,The instructor ran the exam online.,Was the exam run online?,passive,def,patient,no,yes,yes,run,atypical,active,4
-2,B,1,The instructor ran the exam online.,Was the exam run offline?,passive,def,patient,no,yes,no,run,atypical,active,4
-3,C,1,The exam was run online by the instructor.,Was the exam run online?,passive,def,patient,no,yes,yes,run,atypical,passive,4
-4,D,1,The exam was run online by the instructor.,Was the exam run offline?,passive,def,patient,no,yes,no,run,atypical,passive,4
-5,E,1,The instructor ran the exam online.,Did the instructor run the the exam online?,active,def,agent,no,yes,yes,run,atypical,active,4
-6,F,1,The instructor ran the exam online.,Did the instructor run the the exam offline?,active,def,agent,no,yes,no,run,atypical,active,4
-7,G,1,The exam was run online by the instructor.,Did the instructor run the the exam online?,active,def,agent,no,yes,yes,run,atypical,passive,4
-8,H,1,The exam was run online by the instructor.,Did the instructor run the the exam offline?,active,def,agent,no,yes,no,run,atypical,passive,4
-9,B,1,The instructor taught the course online.,Was the course taught online?,passive,def,patient,no,yes,yes,teach,typical,active,4
-10,C,1,The instructor taught the course online.,Was the course taught offline?,passive,def,patient,no,yes,no,teach,typical,active,4
-11,D,1,The course was taught online.,Was the course taught online?,passive,def,patient,no,yes,yes,teach,typical,passive,4
-12,E,1,The course was taught online.,Was the course taught offline?,passive,def,patient,no,yes,no,teach,typical,passive,4
-13,F,1,The instructor taught the course online.,Did the instructor teach online?,active,def,agent,no,yes,yes,teach,typical,active,4
-14,G,1,The instructor taught the course online.,Did the instructor teach offline?,active,def,agent,no,yes,no,teach,typical,active,4
-15,H,1,The course was taught online.,Did the instructor teach online?,active,def,agent,no,yes,yes,teach,typical,passive,4
-16,A,1,The course was taught online.,Did the instructor teach offline?,active,def,agent,no,yes,no,teach,typical,passive,4
-17,C,2,The teacher heard the announcement today.,Was the announcement heard today by the teacher?,passive,def,patient,no,yes,yes,hear,atypical,active,4
-18,D,2,The teacher heard the announcement today.,Was the announcement heard yesterday by the teacher?,passive,def,patient,no,yes,no,hear,atypical,active,4
-19,E,2,The announcement was heard today by the teacher.,Was the announcement heard today by the teacher?,passive,def,patient,no,yes,yes,hear,atypical,passive,4
-20,F,2,The announcement was heard today by the teacher.,Was the announcement heard yesterday by the teacher?,passive,def,patient,no,yes,no,hear,atypical,passive,4
-21,G,2,The teacher heard the announcement today.,Did the teacher hear the announcement today?,active,def,agent,no,yes,yes,hear,atypical,active,4
-22,H,2,The teacher heard the announcement today.,Did the teacher hear the announcement yesterday? ,active,def,agent,no,yes,no,hear,atypical,active,4
-23,A,2,The announcement was heard today by the teacher.,Did the teacher hear the announcement today?,active,def,agent,no,yes,yes,hear,atypical,passive,4
-24,B,2,The announcement was heard today by the teacher.,Did the teacher hear the announcement yesterday? ,active,def,agent,no,yes,no,hear,atypical,passive,4
-25,D,2,The teacher caught the news today.,Were the news caught today by the teacher? ,passive,def,patient,no,yes,yes,catch ,typical,active,4
-26,E,2,The teacher caught the news today.,Were the news caught yesterday by the teacher?,passive,def,patient,no,yes,no,catch ,typical,active,4
-27,F,2,The news were caught today by the teacher.,Were the news caught today by the teacher? ,passive,def,patient,no,yes,yes,catch ,typical,passive,4
-28,G,2,The news were caught today by the teacher.,Were the news caught yesterday by the teacher?,passive,def,patient,no,yes,no,catch ,typical,passive,4
-29,H,2,The teacher caught the news today.,Did the teacher catch the news today? ,active,def,agent,no,yes,yes,catch ,typical,active,4
-30,A,2,The teacher caught the news today.,Did the teacher catch the news yesterday? ,active,def,agent,no,yes,no,catch ,typical,active,4
-31,B,2,The news were caught today by the teacher.,Did the teacher catch the news today? ,active,def,agent,no,yes,yes,catch ,typical,passive,4
-32,C,2,The news were caught today by the teacher.,Did the teacher catch the news yesterday? ,active,def,agent,no,yes,no,catch ,typical,passive,4
-33,E,3,The professor picked the text at home.,Was the text picked at home by the professor? ,passive,def,patient,no,yes,yes,pick,atypical,active,3
-34,F,3,The professor picked the text at home.,Was the text picked in school by the professor? ,passive,def,patient,no,yes,no,pick ,atypical,active,3
-35,G,3,The text was picked at home by the professor.,Was the text picked at home by the professor? ,passive,def,patient,no,yes,yes,pick,atypical,passive,3
-36,H,3,The text was picked at home by the professor.,Was the text picked in school by the professor? ,passive,def,patient,no,yes,no,pick,atypical,passive,3
-37,A,3,The professor picked the text at home.,Did the professor pick the text at home? ,active,def,agent,no,yes,yes,pick,atypical,active,3
-38,B,3,The professor picked the text at home.,Did the professor pick the text in school? ,active,def,agent,no,yes,no,pick,atypical,active,3
-39,C,3,The text was picked at home by the professor.,Did the professor pick the text at home? ,active,def,agent,no,yes,yes,pick,atypical,passive,3
-40,D,3,The text was picked at home by the professor.,Did the professor pick the text in school? ,active,def,agent,no,yes,no,pick,atypical,passive,3
-41,F,3,The professor read the book at home.,Was the book read at home by the professor?,passive,def,patient,no,yes,yes,read,typical,active,4
-42,G,3,The professor read the book at home.,Was the book read in school by the professor? ,passive,def,patient,no,yes,no,read,typical,active,4
-43,H,3,The book was read at home by the professor.,Was the book read at home by the professor?,passive,def,patient,no,yes,yes,read,typical,passive,4
-44,A,3,The book was read at home by the professor.,Was the book read in school by the professor? ,passive,def,patient,no,yes,no,read,typical,passive,4
-45,B,3,The professor read the book at home.,Did the professor read the book at home? ,active,def,agent,no,yes,yes,read,typical,active,4
-46,C,3,The professor read the book at home.,Did the professor read the book in school?,active,def,agent,no,yes,no,read,typical,active,4
-47,D,3,The book was read at home by the professor.,Did the professor read the book at home? ,active,def,agent,no,yes,yes,read,typical,passive,4
-48,E,3,The book was read at home by the professor.,Did the professor read the book in school?,active,def,agent,no,yes,no,read,typical,passive,4
-49,G,4,The student turned the pages quickly.,Were the pages turned quickly by the student?,passive,def,patient,no,yes,yes,turn,atypical,active,4
-50,H,4,The student turned the pages quickly.,Were the pages turned slowly by the student?,passive,def,patient,no,yes,no,turn,atypical,active,4
-51,A,4,The pages were turned quickly by the student.,Were the pages turned quickly by the student?,passive,def,patient,no,yes,yes,turn,atypical,passive,4
-52,B,4,The pages were turned quickly by the student.,Were the pages turned slowly by the student?,passive,def,patient,no,yes,no,turn,atypical,passive,4
-53,C,4,The student turned the pages quickly.,Did the student turn the pages quickly? ,active,def,agent,no,yes,yes,turn,atypical,active,4
-54,D,4,The student turned the pages quickly.,Did the student turn the pages slowly?,active,def,agent,no,yes,no,turn,atypical,active,4
-55,E,4,The pages were turned quickly by the student.,Did the student turn the pages quickly? ,active,def,agent,no,yes,yes,turn,atypical,passive,4
-56,F,4,The pages were turned quickly by the student.,Did the student turn the pages slowly? ,active,def,agent,no,yes,no,turn,atypical,passive,4
-57,H,4,The student changed the answer quickly.,Was the answer changed quickly by the student?,passive,def,patient,no,yes,yes,change ,typical,active,4
-58,A,4,The student changed the answer quickly.,Was the answer changed slowly by the student?,passive,def,patient,no,yes,no,change ,typical,active,4
-59,B,4,The answer was quickly changed by the student.,Was the answer changed quickly by the student?,passive,def,patient,no,yes,yes,change ,typical,passive,4
-60,C,4,The answer was quickly changed by the student.,Was the answer changed slowly by the student?,passive,def,patient,no,yes,no,change ,typical,passive,4
-61,D,4,The student changed the answer quickly.,Did the student change the answer quickly?,active,def,agent,no,yes,yes,change ,typical,active,4
-62,E,4,The student changed the answer quickly.,Did the student change the answer slowly?,active,def,agent,no,yes,no,change ,typical,active,4
-63,F,4,The answer was quickly changed by the student.,Did the student change the answer quickly?,active,def,agent,no,yes,yes,change ,typical,passive,4
-64,G,4,The answer was quickly changed by the student.,Did the student change the answer slowly?,active,def,agent,no,yes,no,change ,typical,passive,4
-65,A,5,The assistant played the video in black and white.,Was the video played in black and white by the assisstant? ,passive,def,patient,no,yes,yes,play,atypical,active,4
-66,B,5,The assistant played the video in black and white.,Was the video played in color by the assisstant? ,passive,def,patient,no,yes,no,play,atypical,active,4
-67,C,5,The video was played in black and white by the assisstant.,Was the video played in black and white by the assisstant? ,passive,def,patient,no,yes,yes,play,atypical,passive,4
-68,D,5,The video was played in black and white by the assisstant.,Was the video played in color by the assisstant? ,passive,def,patient,no,yes,no,play,atypical,passive,4
-69,E,5,The assistant played the video in black and white.,Did the assisstant play the video in black and white? ,active,def,agent,no,yes,yes,play,atypical,active,4
-70,F,5,The assistant played the video in black and white.,Did the assisstant play the video in color? ,active,def,agent,no,yes,no,play,atypical,active,4
-71,G,5,The video was played in black and white by the assisstant.,Did the assisstant play the video in black and white? ,active,def,agent,no,yes,yes,play,atypical,passive,4
-72,H,5,The video was played in black and white by the assisstant.,Did the assisstant play the video in color? ,active,def,agent,no,yes,no,play,atypical,passive,4
-73,B,5,The assisstant showed the movie in black and white.,Was the movie shown in black and white by the assisstant? ,passive,def,patient,no,yes,yes,show,typical,active,4
-74,C,5,The assisstant showed the movie in black and white.,Was the movie shown in color by the assisstant? ,passive,def,patient,no,yes,no,show,typical,active,4
-75,D,5,The movie was shown in black and white by the assisstant.,Was the movie shown in black and white by the assisstant? ,passive,def,patient,no,yes,yes,show,typical,passive,4
-76,E,5,The movie was shown in black and white by the assisstant.,Was the movie shown in color by the assisstant? ,passive,def,patient,no,yes,no,show,typical,passive,4
-77,F,5,The assisstant showed the movie in black and white.,Did the assisstant show the movie in black and white? ,active,def,agent,no,yes,yes,show,typical,active,4
-78,G,5,The assisstant showed the movie in black and white.,Did the assisstant show the movie in color? ,active,def,agent,no,yes,no,show,typical,active,4
-79,H,5,The movie was shown in black and white by the assisstant.,Did the assisstant show the movie in black and white? ,active,def,agent,no,yes,yes,show,typical,passive,4
-80,A,5,The movie was shown in black and white by the assisstant.,Did the assisstant show the movie in color? ,active,def,agent,no,yes,no,show,typical,passive,4
-81,C,6,The lecturer moved the heavy table.,Was the heavy table moved by the lecturer? ,passive,def,patient,no,yes,yes,move,atypical,active,4
-82,D,6,The lecturer moved the heavy table.,Was the light table moved by the lecturer?,passive,def,patient,no,yes,no,move,atypical,active,4
-83,E,6,The heavy table was moved by the lecturer.,Was the heavy table moved by the lecturer? ,passive,def,patient,no,yes,yes,move,atypical,passive,4
-84,F,6,The heavy table was moved by the lecturer.,Was the light table moved by the lecturer?,passive,def,patient,no,yes,no,move,atypical,passive,4
-85,G,6,The lecturer moved the heavy table.,Did the lecturer move the heavy table? ,active,def,agent,no,yes,yes,move,atypical,active,4
-86,H,6,The lecturer moved the heavy table.,Did the lecturer move the light table?,active,def,agent,no,yes,no,move,atypical,active,4
-87,A,6,The heavy table was moved by the lecturer.,Did the lecturer move the heavy table? ,active,def,agent,no,yes,yes,move,atypical,passive,4
-88,B,6,The heavy table was moved by the lecturer.,Did the lecturer move the light table?,active,def,agent,no,yes,no,move,atypical,passive,4
-89,D,6,The lecturer carried the heavy chair.,Was the heavy chair carried by the lecturer?,passive,def,patient,no,yes,yes,carry,typical,active,4
-90,E,6,The lecturer carried the heavy chair.,Was the light chair carried by the lecturer?,passive,def,patient,no,yes,no,carry,typical,active,4
-91,F,6,The heavy chair was carried by the lecturer.,Was the heavy chair carried by the lecturer?,passive,def,patient,no,yes,yes,carry,typical,passive,4
-92,G,6,The heavy chair was carried by the lecturer.,Was the light chair carried by the lecturer?,passive,def,patient,no,yes,no,carry,typical,passive,4
-93,H,6,The lecturer carried the heavy chair.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,yes,carry,typical,active,4
-94,A,6,The lecturer carried the heavy chair.,Did the lecturer carry the light chair? ,active,def,agent,no,yes,no,carry,typical,active,4
-95,B,6,The heavy chair was carried by the lecturer.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,yes,carry,typical,passive,4
-96,C,6,The heavy chair was carried by the lecturer.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,no,carry,typical,passive,4
-97,E,7,The tutor always helped the students.,Were the students always helped by the tutor? ,passive,def,patient,no,yes,yes,help,atypical,active,3
-98,F,7,The tutor always helped the students.,Were the students never helped by the tutor?,passive,def,patient,no,yes,no,help,atypical,active,3
-99,G,7,The students were always helped by the tutor.,Were the students always helped by the tutor? ,passive,def,patient,no,yes,yes,help,atypical,passive,3
-100,H,7,The students were always helped by the tutor.,Were the students never helped by the tutor?,passive,def,patient,no,yes,no,help,atypical,passive,3
-101,A,7,The tutor always helped the students.,Did the tutor always help the students?,active,def,agent,no,yes,yes,help,atypical,active,3
-102,B,7,The tutor always helped the students.,Did the tutor never help the students? ,active,def,agent,no,yes,no,help,atypical,active,3
-103,C,7,The students were always helped by the tutor.,Did the tutor always help the students?,active,def,agent,no,yes,yes,help,atypical,passive,3
-104,D,7,The students were always helped by the tutor.,Did the tutor never help the students? ,active,def,agent,no,yes,no,help,atypical,passive,3
-105,F,7,The tutor always encouraged the students.,Were the students always encouraged by the tutor?,passive,def,patient,no,yes,yes,encourage,typical,active,4
-106,G,7,The tutor always encouraged the students.,Were the students never encouraged by the tutor?,passive,def,patient,no,yes,no,encourage,typical,active,4
-107,H,7,The students were always encouraged by the tutor.,Were the students always encouraged by the tutor?,passive,def,patient,no,yes,yes,encourage,typical,passive,4
-108,A,7,The students were always encouraged by the tutor.,Were the students never encouraged by the tutor?,passive,def,patient,no,yes,no,encourage,typical,passive,4
-109,B,7,The tutor always encouraged the students.,Did the tutor always encourage the students?,active,def,agent,no,yes,yes,encourage,typical,active,4
-110,C,7,The tutor always encouraged the students.,Did the tutor never encourage the students?,active,def,agent,no,yes,no,encourage,typical,active,4
-111,D,7,The students were always encouraged by the tutor.,Did the tutor always encourage the students?,active,def,agent,no,yes,yes,encourage,typical,passive,4
-112,E,7,The students were always encouraged by the tutor.,Did the tutor never encourage the students?,active,def,agent,no,yes,no,encourage,typical,passive,4
+1,A,1,The instructor ran the exam online.,Was the exam run online?,passive,def,patient,no,yes,right,run,atypical,active,4
+2,B,1,The instructor ran the exam online.,Was the exam run offline?,passive,def,patient,no,yes,left,run,atypical,active,4
+3,C,1,The exam was run online by the instructor.,Was the exam run online?,passive,def,patient,no,yes,right,run,atypical,passive,4
+4,D,1,The exam was run online by the instructor.,Was the exam run offline?,passive,def,patient,no,yes,left,run,atypical,passive,4
+5,E,1,The instructor ran the exam online.,Did the instructor run the the exam online?,active,def,agent,no,yes,right,run,atypical,active,4
+6,F,1,The instructor ran the exam online.,Did the instructor run the the exam offline?,active,def,agent,no,yes,left,run,atypical,active,4
+7,G,1,The exam was run online by the instructor.,Did the instructor run the the exam online?,active,def,agent,no,yes,right,run,atypical,passive,4
+8,H,1,The exam was run online by the instructor.,Did the instructor run the the exam offline?,active,def,agent,no,yes,left,run,atypical,passive,4
+9,B,1,The instructor taught the course online.,Was the course taught online?,passive,def,patient,no,yes,right,teach,typical,active,4
+10,C,1,The instructor taught the course online.,Was the course taught offline?,passive,def,patient,no,yes,left,teach,typical,active,4
+11,D,1,The course was taught online.,Was the course taught online?,passive,def,patient,no,yes,right,teach,typical,passive,4
+12,E,1,The course was taught online.,Was the course taught offline?,passive,def,patient,no,yes,left,teach,typical,passive,4
+13,F,1,The instructor taught the course online.,Did the instructor teach online?,active,def,agent,no,yes,right,teach,typical,active,4
+14,G,1,The instructor taught the course online.,Did the instructor teach offline?,active,def,agent,no,yes,left,teach,typical,active,4
+15,H,1,The course was taught online.,Did the instructor teach online?,active,def,agent,no,yes,right,teach,typical,passive,4
+16,A,1,The course was taught online.,Did the instructor teach offline?,active,def,agent,no,yes,left,teach,typical,passive,4
+17,C,2,The teacher heard the announcement today.,Was the announcement heard today by the teacher?,passive,def,patient,no,yes,right,hear,atypical,active,4
+18,D,2,The teacher heard the announcement today.,Was the announcement heard yesterday by the teacher?,passive,def,patient,no,yes,left,hear,atypical,active,4
+19,E,2,The announcement was heard today by the teacher.,Was the announcement heard today by the teacher?,passive,def,patient,no,yes,right,hear,atypical,passive,4
+20,F,2,The announcement was heard today by the teacher.,Was the announcement heard yesterday by the teacher?,passive,def,patient,no,yes,left,hear,atypical,passive,4
+21,G,2,The teacher heard the announcement today.,Did the teacher hear the announcement today?,active,def,agent,no,yes,right,hear,atypical,active,4
+22,H,2,The teacher heard the announcement today.,Did the teacher hear the announcement yesterday? ,active,def,agent,no,yes,left,hear,atypical,active,4
+23,A,2,The announcement was heard today by the teacher.,Did the teacher hear the announcement today?,active,def,agent,no,yes,right,hear,atypical,passive,4
+24,B,2,The announcement was heard today by the teacher.,Did the teacher hear the announcement yesterday? ,active,def,agent,no,yes,left,hear,atypical,passive,4
+25,D,2,The teacher caught the news today.,Were the news caught today by the teacher? ,passive,def,patient,no,yes,right,catch ,typical,active,4
+26,E,2,The teacher caught the news today.,Were the news caught yesterday by the teacher?,passive,def,patient,no,yes,left,catch ,typical,active,4
+27,F,2,The news were caught today by the teacher.,Were the news caught today by the teacher? ,passive,def,patient,no,yes,right,catch ,typical,passive,4
+28,G,2,The news were caught today by the teacher.,Were the news caught yesterday by the teacher?,passive,def,patient,no,yes,left,catch ,typical,passive,4
+29,H,2,The teacher caught the news today.,Did the teacher catch the news today? ,active,def,agent,no,yes,right,catch ,typical,active,4
+30,A,2,The teacher caught the news today.,Did the teacher catch the news yesterday? ,active,def,agent,no,yes,left,catch ,typical,active,4
+31,B,2,The news were caught today by the teacher.,Did the teacher catch the news today? ,active,def,agent,no,yes,right,catch ,typical,passive,4
+32,C,2,The news were caught today by the teacher.,Did the teacher catch the news yesterday? ,active,def,agent,no,yes,left,catch ,typical,passive,4
+33,E,3,The professor picked the text at home.,Was the text picked at home by the professor? ,passive,def,patient,no,yes,right,pick,atypical,active,3
+34,F,3,The professor picked the text at home.,Was the text picked in school by the professor? ,passive,def,patient,no,yes,left,pick ,atypical,active,3
+35,G,3,The text was picked at home by the professor.,Was the text picked at home by the professor? ,passive,def,patient,no,yes,right,pick,atypical,passive,3
+36,H,3,The text was picked at home by the professor.,Was the text picked in school by the professor? ,passive,def,patient,no,yes,left,pick,atypical,passive,3
+37,A,3,The professor picked the text at home.,Did the professor pick the text at home? ,active,def,agent,no,yes,right,pick,atypical,active,3
+38,B,3,The professor picked the text at home.,Did the professor pick the text in school? ,active,def,agent,no,yes,left,pick,atypical,active,3
+39,C,3,The text was picked at home by the professor.,Did the professor pick the text at home? ,active,def,agent,no,yes,right,pick,atypical,passive,3
+40,D,3,The text was picked at home by the professor.,Did the professor pick the text in school? ,active,def,agent,no,yes,left,pick,atypical,passive,3
+41,F,3,The professor read the book at home.,Was the book read at home by the professor?,passive,def,patient,no,yes,right,read,typical,active,4
+42,G,3,The professor read the book at home.,Was the book read in school by the professor? ,passive,def,patient,no,yes,left,read,typical,active,4
+43,H,3,The book was read at home by the professor.,Was the book read at home by the professor?,passive,def,patient,no,yes,right,read,typical,passive,4
+44,A,3,The book was read at home by the professor.,Was the book read in school by the professor? ,passive,def,patient,no,yes,left,read,typical,passive,4
+45,B,3,The professor read the book at home.,Did the professor read the book at home? ,active,def,agent,no,yes,right,read,typical,active,4
+46,C,3,The professor read the book at home.,Did the professor read the book in school?,active,def,agent,no,yes,left,read,typical,active,4
+47,D,3,The book was read at home by the professor.,Did the professor read the book at home? ,active,def,agent,no,yes,right,read,typical,passive,4
+48,E,3,The book was read at home by the professor.,Did the professor read the book in school?,active,def,agent,no,yes,left,read,typical,passive,4
+49,G,4,The student turned the pages quickly.,Were the pages turned quickly by the student?,passive,def,patient,no,yes,right,turn,atypical,active,4
+50,H,4,The student turned the pages quickly.,Were the pages turned slowly by the student?,passive,def,patient,no,yes,left,turn,atypical,active,4
+51,A,4,The pages were turned quickly by the student.,Were the pages turned quickly by the student?,passive,def,patient,no,yes,right,turn,atypical,passive,4
+52,B,4,The pages were turned quickly by the student.,Were the pages turned slowly by the student?,passive,def,patient,no,yes,left,turn,atypical,passive,4
+53,C,4,The student turned the pages quickly.,Did the student turn the pages quickly? ,active,def,agent,no,yes,right,turn,atypical,active,4
+54,D,4,The student turned the pages quickly.,Did the student turn the pages slowly?,active,def,agent,no,yes,left,turn,atypical,active,4
+55,E,4,The pages were turned quickly by the student.,Did the student turn the pages quickly? ,active,def,agent,no,yes,right,turn,atypical,passive,4
+56,F,4,The pages were turned quickly by the student.,Did the student turn the pages slowly? ,active,def,agent,no,yes,left,turn,atypical,passive,4
+57,H,4,The student changed the answer quickly.,Was the answer changed quickly by the student?,passive,def,patient,no,yes,right,change ,typical,active,4
+58,A,4,The student changed the answer quickly.,Was the answer changed slowly by the student?,passive,def,patient,no,yes,left,change ,typical,active,4
+59,B,4,The answer was quickly changed by the student.,Was the answer changed quickly by the student?,passive,def,patient,no,yes,right,change ,typical,passive,4
+60,C,4,The answer was quickly changed by the student.,Was the answer changed slowly by the student?,passive,def,patient,no,yes,left,change ,typical,passive,4
+61,D,4,The student changed the answer quickly.,Did the student change the answer quickly?,active,def,agent,no,yes,right,change ,typical,active,4
+62,E,4,The student changed the answer quickly.,Did the student change the answer slowly?,active,def,agent,no,yes,left,change ,typical,active,4
+63,F,4,The answer was quickly changed by the student.,Did the student change the answer quickly?,active,def,agent,no,yes,right,change ,typical,passive,4
+64,G,4,The answer was quickly changed by the student.,Did the student change the answer slowly?,active,def,agent,no,yes,left,change ,typical,passive,4
+65,A,5,The assistant played the video in black and white.,Was the video played in black and white by the assisstant? ,passive,def,patient,no,yes,right,play,atypical,active,4
+66,B,5,The assistant played the video in black and white.,Was the video played in color by the assisstant? ,passive,def,patient,no,yes,left,play,atypical,active,4
+67,C,5,The video was played in black and white by the assisstant.,Was the video played in black and white by the assisstant? ,passive,def,patient,no,yes,right,play,atypical,passive,4
+68,D,5,The video was played in black and white by the assisstant.,Was the video played in color by the assisstant? ,passive,def,patient,no,yes,left,play,atypical,passive,4
+69,E,5,The assistant played the video in black and white.,Did the assisstant play the video in black and white? ,active,def,agent,no,yes,right,play,atypical,active,4
+70,F,5,The assistant played the video in black and white.,Did the assisstant play the video in color? ,active,def,agent,no,yes,left,play,atypical,active,4
+71,G,5,The video was played in black and white by the assisstant.,Did the assisstant play the video in black and white? ,active,def,agent,no,yes,right,play,atypical,passive,4
+72,H,5,The video was played in black and white by the assisstant.,Did the assisstant play the video in color? ,active,def,agent,no,yes,left,play,atypical,passive,4
+73,B,5,The assisstant showed the movie in black and white.,Was the movie shown in black and white by the assisstant? ,passive,def,patient,no,yes,right,show,typical,active,4
+74,C,5,The assisstant showed the movie in black and white.,Was the movie shown in color by the assisstant? ,passive,def,patient,no,yes,left,show,typical,active,4
+75,D,5,The movie was shown in black and white by the assisstant.,Was the movie shown in black and white by the assisstant? ,passive,def,patient,no,yes,right,show,typical,passive,4
+76,E,5,The movie was shown in black and white by the assisstant.,Was the movie shown in color by the assisstant? ,passive,def,patient,no,yes,left,show,typical,passive,4
+77,F,5,The assisstant showed the movie in black and white.,Did the assisstant show the movie in black and white? ,active,def,agent,no,yes,right,show,typical,active,4
+78,G,5,The assisstant showed the movie in black and white.,Did the assisstant show the movie in color? ,active,def,agent,no,yes,left,show,typical,active,4
+79,H,5,The movie was shown in black and white by the assisstant.,Did the assisstant show the movie in black and white? ,active,def,agent,no,yes,right,show,typical,passive,4
+80,A,5,The movie was shown in black and white by the assisstant.,Did the assisstant show the movie in color? ,active,def,agent,no,yes,left,show,typical,passive,4
+81,C,6,The lecturer moved the heavy table.,Was the heavy table moved by the lecturer? ,passive,def,patient,no,yes,right,move,atypical,active,4
+82,D,6,The lecturer moved the heavy table.,Was the light table moved by the lecturer?,passive,def,patient,no,yes,left,move,atypical,active,4
+83,E,6,The heavy table was moved by the lecturer.,Was the heavy table moved by the lecturer? ,passive,def,patient,no,yes,right,move,atypical,passive,4
+84,F,6,The heavy table was moved by the lecturer.,Was the light table moved by the lecturer?,passive,def,patient,no,yes,left,move,atypical,passive,4
+85,G,6,The lecturer moved the heavy table.,Did the lecturer move the heavy table? ,active,def,agent,no,yes,right,move,atypical,active,4
+86,H,6,The lecturer moved the heavy table.,Did the lecturer move the light table?,active,def,agent,no,yes,left,move,atypical,active,4
+87,A,6,The heavy table was moved by the lecturer.,Did the lecturer move the heavy table? ,active,def,agent,no,yes,right,move,atypical,passive,4
+88,B,6,The heavy table was moved by the lecturer.,Did the lecturer move the light table?,active,def,agent,no,yes,left,move,atypical,passive,4
+89,D,6,The lecturer carried the heavy chair.,Was the heavy chair carried by the lecturer?,passive,def,patient,no,yes,right,carry,typical,active,4
+90,E,6,The lecturer carried the heavy chair.,Was the light chair carried by the lecturer?,passive,def,patient,no,yes,left,carry,typical,active,4
+91,F,6,The heavy chair was carried by the lecturer.,Was the heavy chair carried by the lecturer?,passive,def,patient,no,yes,right,carry,typical,passive,4
+92,G,6,The heavy chair was carried by the lecturer.,Was the light chair carried by the lecturer?,passive,def,patient,no,yes,left,carry,typical,passive,4
+93,H,6,The lecturer carried the heavy chair.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,right,carry,typical,active,4
+94,A,6,The lecturer carried the heavy chair.,Did the lecturer carry the light chair? ,active,def,agent,no,yes,left,carry,typical,active,4
+95,B,6,The heavy chair was carried by the lecturer.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,right,carry,typical,passive,4
+96,C,6,The heavy chair was carried by the lecturer.,Did the lecturer carry the heavy chair? ,active,def,agent,no,yes,left,carry,typical,passive,4
+97,E,7,The tutor always helped the students.,Were the students always helped by the tutor? ,passive,def,patient,no,yes,right,help,atypical,active,3
+98,F,7,The tutor always helped the students.,Were the students never helped by the tutor?,passive,def,patient,no,yes,left,help,atypical,active,3
+99,G,7,The students were always helped by the tutor.,Were the students always helped by the tutor? ,passive,def,patient,no,yes,right,help,atypical,passive,3
+100,H,7,The students were always helped by the tutor.,Were the students never helped by the tutor?,passive,def,patient,no,yes,left,help,atypical,passive,3
+101,A,7,The tutor always helped the students.,Did the tutor always help the students?,active,def,agent,no,yes,right,help,atypical,active,3
+102,B,7,The tutor always helped the students.,Did the tutor never help the students? ,active,def,agent,no,yes,left,help,atypical,active,3
+103,C,7,The students were always helped by the tutor.,Did the tutor always help the students?,active,def,agent,no,yes,right,help,atypical,passive,3
+104,D,7,The students were always helped by the tutor.,Did the tutor never help the students? ,active,def,agent,no,yes,left,help,atypical,passive,3
+105,F,7,The tutor always encouraged the students.,Were the students always encouraged by the tutor?,passive,def,patient,no,yes,right,encourage,typical,active,4
+106,G,7,The tutor always encouraged the students.,Were the students never encouraged by the tutor?,passive,def,patient,no,yes,left,encourage,typical,active,4
+107,H,7,The students were always encouraged by the tutor.,Were the students always encouraged by the tutor?,passive,def,patient,no,yes,right,encourage,typical,passive,4
+108,A,7,The students were always encouraged by the tutor.,Were the students never encouraged by the tutor?,passive,def,patient,no,yes,left,encourage,typical,passive,4
+109,B,7,The tutor always encouraged the students.,Did the tutor always encourage the students?,active,def,agent,no,yes,right,encourage,typical,active,4
+110,C,7,The tutor always encouraged the students.,Did the tutor never encourage the students?,active,def,agent,no,yes,left,encourage,typical,active,4
+111,D,7,The students were always encouraged by the tutor.,Did the tutor always encourage the students?,active,def,agent,no,yes,right,encourage,typical,passive,4
+112,E,7,The students were always encouraged by the tutor.,Did the tutor never encourage the students?,active,def,agent,no,yes,left,encourage,typical,passive,4
