@@ -254,6 +254,7 @@ Template("sentences.csv", row =>
         ,
         newKey(" ")
             .wait()
+    )
 ) // defines template for the main experiment
 
 SendResults("send") // send results to server before good-bye message
