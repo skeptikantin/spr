@@ -50,7 +50,10 @@ newTrial( "intro" ,
 
 newTrial("instructions" ,
 
-    newText("<p>In this experiment you are going to read sentences word by word.<br/>You can proceed to the next word by pressing the SPACE bar.</p><p>After reading a sentence, there will be a question about the sentence.</p><p>You can answer the question by using the left and right arrow keys,</br>or by clicking on the arrows.")
+    newText("<p>Your task in this experiment is to read sentences word by word.<br/>" +
+        "You proceed to the next word by pressing the SPACE bar.</p>" +
+        "<p>After reading a sentence, there will be a question about the sentence.</p>" +
+        "<p>You answer the question by using the left and right arrow keys,</br>or by clicking on the arrows.")
         .css("font-size", "1.5em")
         .css("font-family", "Open Sans")
         .center()
@@ -103,7 +106,7 @@ Template("sentences.csv", row =>
         newText("<p></p>")
             .print()
         ,
-        newText("Comprehension", row.Q)
+        newText("Comprehension", row.Question)
             .css("font-size", "2em")
             .css("font-family", "Open Sans")
             .center()
@@ -126,8 +129,10 @@ Template("sentences.csv", row =>
             .wait()
     )
     //.fullscreen()
+    .log("Id", row.Id)
+    .log("Group", row.Group)
     .log("Corr", row.Corr)
-    .log("Comp", row.Q)
+    .log("Comp", row.Question)
 ) // defines template for the main experiment
 
 SendResults("send") // send results to server before good-bye message
@@ -150,15 +155,5 @@ newTrial("goodbye",
         .wait()
 ) // the good-bye message
 
-// Spaces and linebreaks don't matter to the script: we've only been using them for the sake of readability
-newTrial( "bye" ,
-    newText("Thank you for your participation!")
-        .css("font-size", "2em")
-        .css("font-family", "Open Sans")
-        .center()
-        .print()
-    ,
-    newButton().wait()  // Wait for a click on a non-displayed button = wait here forever
-)
 .setOption( "countsForProgressBar" , false )
 // Make sure the progress bar is full upon reaching this last (non-)trial
