@@ -44,9 +44,7 @@ newTrial( "intro" ,
         .print()
     ,
     newText("By clicking OK, you agree to the above. Let's get started!")
-        .css("font-size", "1.5em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newButton("OK")
@@ -54,21 +52,7 @@ newTrial( "intro" ,
         .center()
         .print()
         .wait()
-/*    ,
-
-    newText("<p>Please enter your name below and press enter:</p>")
-        .css("font-size", "1.5em")
-        .css("font-family", "Verdana")
-        .center()
-        .print()
-    ,
-    newTextInput()
-        .center()
-        .print()
-        .wait()                 // The next command won't be executed until Enter is pressed
-        .setVar( "ParticipantName" )
-        // This setVar command stores the value from the TextInput element into the Var element */
-
+    
 ) // intro message
 
 newTrial("instructions" ,
