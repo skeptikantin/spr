@@ -1,5 +1,5 @@
 // This is a simple demo script, feel free to edit or delete it
-// Find a tutorial and the list of availalbe elements at:
+// Find a tutorial and the list of available elements at:
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
@@ -22,28 +22,24 @@ Header(
         .start()
         .wait()
 )
-// .log( "Name" , getVar("ParticipantName") )
 // This log command adds a column reporting the participant's name to every line saved to the results
 .log("ParticipantID", PennController.GetURLParameter("participant") );
-// This log command adds a column reporting the participant's name to every line saved to the results
-
 
 newTrial( "intro" ,
 
-    newText("Welcome to this experiment!")
-        .css("font-size", "1.5em")
-        .css("font-family", "Verdana")
-        .center()
+    newText("Welcome!")
+        .css("font-size", "1.2em")
         .print()
     ,
-    newText("<strong>Informed Consent</strong>:")
+    newText("<p><strong>Informed Consent</strong>:</p>")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
-        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.</p>")
+        "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
+        "<strong>Environment:</strong> I participate from a quiet environment and can work uninterrupted.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
