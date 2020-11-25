@@ -143,7 +143,7 @@ Template("training.csv", row =>
             .wait()
         ,
 */
-        newKey("key", "leftright")
+        newKey("key", "FJ")
             .wait()
             .log()
         ,
