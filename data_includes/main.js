@@ -144,9 +144,8 @@ Template("training.csv", row =>
         ,
 */
         newKey("key", "leftright")
-            .log()
-            .once()
             .wait()
+            .log()
         ,
 
         getKey("key")
