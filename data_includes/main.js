@@ -129,10 +129,11 @@ Template("sentences.csv", row =>
             .wait()
     )
     //.fullscreen()
-    .log("Id", row.Id)
-    .log("Group", row.Group)
-    .log("Corr", row.Corr)
-    .log("Comp", row.Question)
+    .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
+    .log("Id", row.Id) // logs the stimulus ID
+    .log("Group", row.Group) // which group were participants assigned
+    .log("Corr", row.Corr) // was the correct comprehension button pressed?
+    .log("Comp", row.Question) // which question was asked?
 ) // defines template for the main experiment
 
 SendResults("send") // send results to server before good-bye message
