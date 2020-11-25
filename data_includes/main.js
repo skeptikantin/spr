@@ -153,6 +153,7 @@ Template("training.csv", row =>
 )
         .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
         .log("Id", row.Id) // logs the stimulus ID
+        .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
         .log("Comp", row.Question) // which question was asked?
@@ -239,6 +240,7 @@ Template("sentences.csv", row =>
     )
         .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
         .log("Id", row.Id) // logs the stimulus ID
+        .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
         .log("Comp", row.Question) // which question was asked?
