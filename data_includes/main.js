@@ -134,19 +134,14 @@ Template("training.csv", row =>
             .center()
             .print()
         ,
-        newSelector("key")
+        newSelector("lr", "right, left")
             .add(getImage("left"), getImage("right"))
             .keys(37, 39)
             .log()
             .once()
             .wait()
         ,
-        getImage("key")
-            .test.pressed(row.Corr)
-            .success(newText("success", "Correct!").css("font-color", "green").center().print())
-            .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
-        ,
-        getKey("key")
+        getKey("lr")
             .test.pressed(row.Corr)
             .success(newText("success", "Correct!").css("font-color", "green").center().print())
             .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
