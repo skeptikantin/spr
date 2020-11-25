@@ -142,9 +142,9 @@ Template("training.csv", row =>
             .wait()
         ,
         getKey("key")
-            .test.pressed(row.CorrectResponse)
-            .success( newText("success", "Correct!").print() )
-            .failure( newText("failure", "Incorrect").print() )
+            .test.pressed(row.Corr)
+            .success(newText("success", "Correct!").css("font-color", "green").center().print())
+            .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
         ,
         newTimer(500)
             .start()
@@ -157,6 +157,39 @@ Template("training.csv", row =>
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
         .log("Comp", row.Question) // which question was asked?
 )
+
+// Intermission
+newTrial("intermission" ,
+
+    newText("<p>Well done, you should be good to go.<br/>" +
+        "Remember: try to be quick <strong>and</strong> accurate.</p>" +
+        "<p>The task is mostly fun, but also demanding, so there<br/>" +
+        "will be a break every 5 sentences.<br/></p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newText("(Please do not take a break <em>while</em> reading a sentence.)")
+        .css("font-size", ".8em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .center()
+        .print()
+    ,
+    newButton("OK")
+        .size(200)
+        .center()
+        .print()
+        .wait()
+)
+
+//
 
 
 Template("sentences.csv", row =>
@@ -206,11 +239,23 @@ Template("sentences.csv", row =>
             .once()
             .wait()
     )
-    .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
-    .log("Id", row.Id) // logs the stimulus ID
-    .log("Group", row.Group) // which group were participants assigned
-    .log("Corr", row.Corr) // was the correct comprehension button pressed?
-    .log("Comp", row.Question) // which question was asked?
+        .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
+        .log("Id", row.Id) // logs the stimulus ID
+        .log("Group", row.Group) // which group were participants assigned
+        .log("Corr", row.Corr) // was the correct comprehension button pressed?
+        .log("Comp", row.Question) // which question was asked?
+    ,
+    newTrial("break",
+
+        newText("<p>Well done, you've earned a little rest if you want.</p>" +
+            "Press SPACE to continue.")
+            .css("font-family", "Verdana")
+            .center()
+            .log()
+            .print()
+        ,
+        newKey(" ")
+            .wait()
 ) // defines template for the main experiment
 
 SendResults("send") // send results to server before good-bye message
