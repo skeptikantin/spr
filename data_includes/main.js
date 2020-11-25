@@ -12,7 +12,7 @@ Sequence( "intro",
     "instructions",
     "training",
     "intermission",
-    // sepWithN("break", randomize("experiment"), 4),
+    sepWithN("break", randomize("experiment"), 4),
     SendResults(),
     "goodbye")
 
