@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-PennController.DebugOff();
+//PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then all the 'experiment' trials in a random order
@@ -134,19 +134,19 @@ Template("training.csv", row =>
             .center()
             .print()
         ,
-        newSelector()
+        newSelector("key")
             .add(getImage("left"), getImage("right"))
             .keys(37, 39)
             .log()
             .once()
             .wait()
         ,
-        getImage()
+        getImage("key")
             .test.pressed(row.Corr)
             .success(newText("success", "Correct!").css("font-color", "green").center().print())
             .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
         ,
-        getKey()
+        getKey("key")
             .test.pressed(row.Corr)
             .success(newText("success", "Correct!").css("font-color", "green").center().print())
             .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
