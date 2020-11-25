@@ -134,7 +134,8 @@ Template("training.csv", row =>
             .center()
             .print()
         ,
-        newSelector("lr", "right, left")
+        // newSelector("lr")
+        newKey("lr")
             .add(getImage("left"), getImage("right"))
             .keys(37, 39)
             .log()
