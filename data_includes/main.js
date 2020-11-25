@@ -12,7 +12,7 @@ Sequence( "intro",
     "instructions",
     "training",
     "intermission",
-    sepWithN("break", randomize("experiment"), 4),
+    // sepWithN("break", randomize("experiment"), 4),
     SendResults(),
     "goodbye")
 
@@ -159,13 +159,12 @@ Template("training.csv", row =>
 )
 
 // Intermission
-newTrial("intermission" ,
+newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
         "<p>The task is mostly fun, but also demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
-        .css("font-size", "1em")
         .css("font-family", "Verdana")
         .center()
         .print()
@@ -190,7 +189,6 @@ newTrial("intermission" ,
 )
 
 //
-
 
 Template("sentences.csv", row =>
     newTrial("experiment",
@@ -280,6 +278,30 @@ newTrial("goodbye",
 .setOption( "countsForProgressBar" , false )
 // Make sure the progress bar is full upon reaching this last (non-)trial
 
+// Define the function for breaking experiment at N intervals:
+function SepWithN(sep, main, n) {
+    this.args = [sep,main];
+
+    this.run = function(arrays) {
+        assert(arrays.length == 2, "Wrong number of arguments (or bad argument) to SepWithN");
+        assert(parseInt(n) > 0, "N must be a positive number");
+        let sep = arrays[0];
+        let main = arrays[1];
+
+        if (main.length <= 1)
+            return main
+        else {
+            let newArray = [];
+            while (main.length){
+                for (let i = 0; i < n && main.length>0; i++)
+                    newArray.push(main.pop());
+                for (let j = 0; j < sep.length; ++j)
+                    newArray.push(sep[j]);
+            }
+            return newArray;
+        }
+    }
+}
 function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); }
 
 _AddStandardCommands(function(PennEngine){
