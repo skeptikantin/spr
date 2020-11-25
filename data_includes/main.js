@@ -141,7 +141,12 @@ Template("training.csv", row =>
             .once()
             .wait()
         ,
-        getKey("key")
+        getImage()
+            .test.pressed(row.Corr)
+            .success(newText("success", "Correct!").css("font-color", "green").center().print())
+            .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
+        ,
+        getKey()
             .test.pressed(row.Corr)
             .success(newText("success", "Correct!").css("font-color", "green").center().print())
             .failure(newText("failure", "Incorrect!").css("font-color", "red").center().print())
