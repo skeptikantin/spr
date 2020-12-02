@@ -33,7 +33,7 @@ Header(
 
 newTrial( "intro" ,
 
-    newText("Welcome!")
+    newText("<p>Welcome!</p>")
         .css("font-size", "1.2em")
         .print()
     ,
@@ -69,12 +69,12 @@ newTrial("instructions" ,
     ,
     newText("<p>Your task is to read sentences word by word. Each word appears on the screen,<br/>" +
         "until you press the space bar, which is when the next word appears.</p>" +
-        "<p>After you have read the sentence, there will be a question about the sentence." +
+        "<p>After you have read the sentence, there will be a question about the sentence.<br/>" +
         "You answer the question by using the <strong>left</strong> or <strong>right</strong> arrow key.")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>So the aim is to read as quickly as possible, but you will need to be accurate on the question, too."+
+    newText("<p>So the aim is to read as quickly as possible, but you will need to be accurate on the question, too.<br/>"+
         "So make sure you understand what you are reading.</p>"+
         "<p>We will start with a few practice sentences so you can get used to the task.</p>")
         .css("font-family", "Verdana")
@@ -96,8 +96,8 @@ Template("training.csv", row =>
     newTrial("training",
 
         newController("DashedSentence", {s: row.Sentence})
-            .css("font-size", "2em")
-            .css("font-family", "Open Sans")
+            .css("font-size", "1.5em")
+            .css("font-family", "Verdana")
             .print()
             .log()
             .wait()
@@ -119,8 +119,8 @@ Template("training.csv", row =>
             .print()
         ,
         newText("Comprehension", row.Question)
-            .css("font-size", "2em")
-            .css("font-family", "Open Sans")
+            .css("font-size", "1.5em")
+            .css("font-family", "Verdana")
             .center()
             .print()
             .log()
@@ -168,11 +168,9 @@ newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
-        "<p>In the main experiment, you will not receive feedback on the correctness of the questions.</p>" +
         "<p>The task is mostly fun, but also demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("(Please do not take a break <em>while</em> reading a sentence.)")
