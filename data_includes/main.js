@@ -3,7 +3,7 @@
 // https://www.pcibex.net/documentation/
 
 PennController.ResetPrefix(null) // Shorten command names (keep this line here)
-//PennController.DebugOff();
+PennController.DebugOff();
 
 
 // Show the 'intro' trial first, then all the 'experiment' trials in a random order
@@ -12,7 +12,7 @@ Sequence( "intro",
     "instructions",
     "training",
     "intermission",
-    sepWithN("break", randomize("experiment"), 4),
+    sepWithN("break", randomize("experiment"), 6),
     SendResults(),
     "goodbye")
 
@@ -69,21 +69,19 @@ newTrial("instructions" ,
     ,
     newText("<p>Your task is to read sentences word by word. Each word appears on the screen,<br/>" +
         "until you press the space bar, which is when the next word appears.</p>" +
-        "<p>After you have read the sentence, there will be a question about the sentence.</p>" +
-        "<p>You answer the question by using the left or right arrow key,</br>or by clicking on the correct arrow.")
+        "<p>After you have read the sentence, there will be a question about the sentence." +
+        "You answer the question by using the <strong>left</strong> or <strong>right</strong> arrow key.")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>So the aim is to read as quickly as possible, but you will need to be accurate on the question, too.</p>"+
+    newText("<p>So the aim is to read as quickly as possible, but you will need to be accurate on the question, too."+
         "So make sure you understand what you are reading.</p>"+
         "<p>We will start with a few practice sentences so you can get used to the task.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("<p>Click OK when you are ready to begin the training phase.</p>")
-        .css("font-size", "1.5em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newButton("OK")
@@ -163,7 +161,6 @@ Template("training.csv", row =>
         .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
-        .log("Comp", row.Question) // which question was asked?
 )
 
 // Intermission
@@ -171,6 +168,7 @@ newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
+        "<p>In the main experiment, you will not receive feedback on the correctness of the questions.</p>" +
         "<p>The task is mostly fun, but also demanding, so there<br/>" +
         "will be a break every 5 sentences.<br/></p>")
         .css("font-family", "Verdana")
@@ -178,19 +176,17 @@ newTrial("intermission",
         .print()
     ,
     newText("(Please do not take a break <em>while</em> reading a sentence.)")
-        .css("font-size", ".8em")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newButton("OK")
-        .size(200)
+        .size(100)
         .center()
         .print()
         .wait()
@@ -250,7 +246,6 @@ Template("sentences.csv", row =>
         .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
-        .log("Comp", row.Question) // which question was asked?
     ,
     newTrial("break",
 
