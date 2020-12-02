@@ -68,7 +68,7 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Your task is to read sentences word by word. Each word appears on the screen,<br/>" +
-        "until you press the space bar, which is when the next word appears.</p>" +
+        "until you press the <strong>space</strong> bar, which is when the next word appears.</p>" +
         "<p>After you have read the sentence, there will be a question about the sentence.<br/>" +
         "You answer the question by using the <strong>left</strong> or <strong>right</strong> arrow key.")
         .css("font-family", "Verdana")
@@ -168,14 +168,12 @@ newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
-        "<p>The task is mostly fun, but also demanding, so there<br/>" +
-        "will be a break every 5 sentences.<br/></p>")
+        "<p>The task is mostly fun, but also demanding,<br/>" +
+        "so there are designated breaks every 5 sentences if you want.<br/></p>")
         .css("font-family", "Verdana")
         .print()
     ,
     newText("(Please do not take a break <em>while</em> reading a sentence.)")
-        .css("font-size", "1em")
-        .css("font-family", "Verdana")
         .print()
     ,
     newText("<p>Click OK when you are ready to proceed to the main experiment.</p>")
@@ -196,8 +194,7 @@ Template("sentences.csv", row =>
     newTrial("experiment",
         
         newController("DashedSentence", {s: row.Sentence})
-            .css("font-size", "2em")
-            .css("font-family", "Open Sans")
+            .css("font-size", "1.5em")
             .print()
             .log()
             .wait()
@@ -219,8 +216,7 @@ Template("sentences.csv", row =>
             .print()
         ,
         newText("Comprehension", row.Question)
-            .css("font-size", "2em")
-            .css("font-family", "Open Sans")
+            .css("font-size", "1.5em")
             .center()
             .print()
             .log()
