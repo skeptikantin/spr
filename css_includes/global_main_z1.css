@@ -21,7 +21,7 @@ div.bar-container {
     background-color: white;
 }
 div.bar {
-    background-color: black;
+    background-color: lightgrey;
 }
 p.progress-text {
     padding-top: 0.5em;
@@ -30,6 +30,7 @@ p.progress-text {
     // font-family: "Verdana", "Arial";
     font-style: italic;
     font-size: small;
+    color: grey;
 }
 p.practice-box {
     color: blue;

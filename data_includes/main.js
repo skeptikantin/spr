@@ -2,7 +2,7 @@
 // Find a tutorial and the list of available elements at:
 // https://www.pcibex.net/documentation/
 
-PennController.ResetPrefix(null) // Shorten command names (keep this line here)
+PennController.ResetPrefix(null); // Shorten command names (keep this line here)
 PennController.DebugOff();
 
 
@@ -13,6 +13,7 @@ Sequence( "intro",
     "training",
     "intermission",
     sepWithN("break", randomize("experiment"), 6),
+    "debrief",
     SendResults(),
     "goodbye")
 
@@ -37,11 +38,8 @@ newTrial( "intro" ,
         .css("font-size", "1.2em")
         .print()
     ,
-    newText("<p><strong>Informed Consent</strong>:</p>")
-        .css("font-family", "Verdana")
-        .print()
-    ,
-    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+    newText("<p><strong>Informed Consent</strong>:</p>"+
+        "<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
@@ -168,7 +166,7 @@ newTrial("intermission",
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
         "<p>Some sentences and/or questions will be easier than others,<br/>"+
-        "so please åpay close attention to what you are reading.</p>"
+        "so please åpay close attention to what you are reading.</p>" +
         "<p>The task is mostly fun, but also demanding,<br/>" +
         "so there are designated breaks every 5 sentences if you want.<br/></p>")
         .css("font-family", "Verdana")
@@ -254,6 +252,53 @@ Template("sentences.csv", row =>
             .wait()
     )
 ) // defines template for the main experiment
+
+newTrial("debrief",
+
+    newText("<p>That's (almost) it, thank you!</p>")
+        .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p>Before you go, let us know if you have any feedback.<br/>" +
+        "This information will help us with the evaluation of the results.</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newTextInput("feedback", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 100)
+        .css("font-family", "Verdana")
+        .print()
+        .log()
+    ,
+    newText("<p>What do you think the experiment was about?</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newTextInput("topic", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 100)
+        .css("font-family", "Verdana")
+        .print()
+        .log()
+    ,
+
+    newText("<p> </p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+
+    newButton("send", "Send results & proceed to verification link")
+        .size(300)
+        .center()
+        .print()
+        .wait()
+)
+
 
 SendResults("send") // send results to server before good-bye message
 
