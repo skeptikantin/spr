@@ -158,7 +158,6 @@ Template("training.csv", row =>
 )
         .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
         .log("Id", row.Id) // logs the stimulus ID
-        .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
 )
@@ -168,6 +167,8 @@ newTrial("intermission",
 
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
+        "<p>Some sentences and/or questions will be easier than others,<br/>"+
+        "so please åpay close attention to what you are reading.</p>"
         "<p>The task is mostly fun, but also demanding,<br/>" +
         "so there are designated breaks every 5 sentences if you want.<br/></p>")
         .css("font-family", "Verdana")
@@ -237,7 +238,6 @@ Template("sentences.csv", row =>
     )
         .log("ExpId", row.ExpId) // logs the experiment ID in multi-experimenter runs
         .log("Id", row.Id) // logs the stimulus ID
-        .log("Type", row.Type) // logs the stimulus type
         .log("Group", row.Group) // which group were participants assigned
         .log("Corr", row.Corr) // was the correct comprehension button pressed?
     ,

@@ -1,33 +1,33 @@
-﻿ExpId,Id,Group,Type,Sentence,Question,VoiceQ,DEFINITENESS,ARGUMENT_ASKED,Left,Right,Corr,VERB,TYPICALITY,VOICE,FREQ
-ch,1,A,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,A,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,A,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,A,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,B,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,B,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,B,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,B,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,C,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,C,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,C,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,C,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,D,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,D,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,D,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,D,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,E,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,E,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,E,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,E,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,F,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,F,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,F,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,F,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,G,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,G,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,G,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,G,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
-ch,1,H,training,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,,,,,,ArrowLeft,,,,
-ch,2,H,training,Thank you very much for being here.,Is the experimenter thankful?,,,,,,ArrowRight,,,,
-ch,3,H,training,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,,,,,,ArrowRight,,,,
-ch,4,H,training,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,,,,,,ArrowLeft,,,,
+﻿ExpId,Id,Group,Sentence,Question,Corr
+train,1,A,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,A,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,A,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,A,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,B,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,B,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,B,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,B,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,C,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,C,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,C,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,C,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,D,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,D,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,D,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,D,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,E,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,E,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,E,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,E,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,F,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,F,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,F,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,F,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,G,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,G,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,G,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,G,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
+train,1,H,The instructor conducts the experiment via prolific.,Did the experiment happen in the lab?,ArrowLeft
+train,2,H,Thank you very much for being here.,Is the experimenter thankful?,ArrowRight
+train,3,H,We hope you enjoy this self-paced reading task.,Will you do a reading experiment?,ArrowRight
+train,4,H,"Before we start, we hope you had a nice holiday week.",Was it Christmas last week?,ArrowLeft
