@@ -166,9 +166,9 @@ newTrial("intermission",
     newText("<p>Well done, you should be good to go.<br/>" +
         "Remember: try to be quick <strong>and</strong> accurate.</p>" +
         "<p>Some sentences and/or questions will be easier than others,<br/>"+
-        "so please åpay close attention to what you are reading.</p>" +
+        "so please pay close attention to what you are reading.</p>" +
         "<p>The task is mostly fun, but also demanding,<br/>" +
-        "so there are designated breaks every 5 sentences if you want.<br/></p>")
+        "so there are designated breaks every 6 sentences if you want.<br/></p>")
         .css("font-family", "Verdana")
         .print()
     ,
