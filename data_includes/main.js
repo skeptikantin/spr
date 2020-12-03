@@ -258,18 +258,29 @@ Template("sentences.csv", row =>
 SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
-    newText("<p>That's it, thank you for your time and effort!</p>")
+    newText("<p>That's it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    newText("<a href='https://www.sfla.ch/'>Click here to validate your participation.</a>")
+    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
+        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
+        "comes in various forms and can be located in different parts of a sentence. Reading experiments<br/>"+
+        "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
+        .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
-    //exitFullscreen(),
+    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
+        .css("font-size", "1em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
+        .css("font-size", ".8em")
+        .css("font-family", "Verdana")
+        .print()
+    ,
     newButton("void")
         .wait()
 ) // the good-bye message
