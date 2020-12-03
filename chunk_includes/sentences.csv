@@ -111,8 +111,8 @@ ch,109,B,The tutor always encouraged the students.,Did the tutor always encourag
 ch,110,C,The tutor always encouraged the students.,Did the tutor never encourage the students?,left,5
 ch,111,D,The students were always encouraged by the tutor.,Did the tutor always encourage the students?,right,7
 ch,112,E,The students were always encouraged by the tutor.,Did the tutor never encourage the students?,left,7
-md,1,A,The new measures will probably help to reduce the strain.,Will new measures be implemented?,right,9
-md,2,B,The new measures will help to reduce the strain.,Will new measures be implemented?,right,8
+md,1,A,The new measures will probably help to reduce the strain.,Will new measures decrease strain?,right,9
+md,2,B,The new measures will help to reduce the strain.,Will new measures decrease strain?,right,8
 md,3,C,The majority of people will probably believe the rumors.,Are there rumors?,right,8
 md,4,D,The majority of people will believe the rumors.,Are there rumors?,right,7
 md,5,B,The successful company will perhaps continue with the production of toys.,Does the company produce furniture?,left,10
@@ -121,8 +121,8 @@ md,7,D,The angry customer will perhaps write a letter of complaint.,Is the custo
 md,8,C,The angry customer will write a letter of complaint.,Is the customer happy?,left,8
 md,9,C,The proposed solutions would eventually make customer safety the norm.,Did someone propose a solution?,right,9
 md,10,D,The proposed solutions would make customer safety the norm.,Did someone propose a solution?,right,8
-md,11,A,The inquisitive teacher would eventually hear about the incident.,Did the teacher hear about the incident?,right,8
-md,12,B,The inquisitive teacher would hear about the incident.,Did the teacher hear about the incident?,right,7
+md,11,A,The inquisitive teacher would eventually hear about the incident.,Was the teacher inquisitive?,right,8
+md,12,B,The inquisitive teacher would hear about the incident.,Was the teacher inquisitive?,right,7
 md,13,D,The new law would already require a lot of cooperation.,Do they suggest a new train system?,left,9
 md,14,C,The new law would require a lot of cooperation.,Do they suggest a new train system?,left,8
 md,15,B,The vast majority would already use the new technology.,Will there be a new law?,left,8

@@ -32,14 +32,18 @@ Header(
 // This log command adds a column reporting the participant's name to every line saved to the results
 .log("ParticipantID", PennController.GetURLParameter("participant") );
 
-newTrial( "intro" ,
+newTrial("intro",
 
     newText("<p>Welcome!</p>")
         .css("font-size", "1.2em")
+        .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Informed Consent</strong>:</p>"+
-        "<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
+    newText("<p><strong>Informed Consent</strong>:</p>")
+        .css("font-family", "Verdana")
+        .print()
+    ,
+    newText("<p><strong>Voluntary participation:</strong> I understand that my participation in this study is voluntary.<br/>" +
         "<strong>Withdrawal:</strong> I can withdraw my participation at any time during the experiment.<br/>"+
         "<strong>Risks:</strong> There are no risks involved.<br/>"+
         "<strong>Equipment:</strong> I am participating from a device with a <strong>physical keyboard</strong>.<br/>"+
@@ -47,18 +51,15 @@ newTrial( "intro" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>By clicking OK, you agree to the above. Let's get started!</p>")
+    newText("<p>By hitting SPACE I consent to the above.")
         .css("font-family", "Verdana")
         .print()
     ,
-    newButton("OK")
-        .size(100)
-        .center()
-        .print()
+    newKey(" ")
+        .log()
+        .once()
         .wait()
-
-) // intro message
-
+)
 newTrial("instructions" ,
 
     newText("<p><strong>The self-paced reading experiment</strong></p>")
@@ -316,7 +317,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://www.sfla.ch/'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=6DB340D0'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
